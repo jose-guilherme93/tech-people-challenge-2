@@ -1,4 +1,63 @@
-.container {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+
+.header {
+  display: flex;
+  flex: 2;
+  width: 100%;
+  height: 7.31rem;
+  
+}
+
+.imageLogo Image {
+  height: 1.68rem;
+}
+
+.ul {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+}
+
+.ul li {
+  display: inline;
+  padding-right: 2.12rem;
+}
+
+ .leftMenu li:last-child {
+  padding-right: 6.75rem;
+}
+
+
+
+
+
+
+.img {
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
   padding: 0 2rem;
 }
 
@@ -113,4 +172,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
