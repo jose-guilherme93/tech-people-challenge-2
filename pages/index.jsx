@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
-import Header from '../components/Header/index'
-import styles from '../styles/Home.module.css'
 
+import Header from '../components/Header'
+
+import styles from '../styles/Home.module.css'
 
 
 export default function Home() {
@@ -15,11 +17,37 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         
       </Head>
-
+      
       <Header />
-      
-      
 
+      <main className={styles.main}>
+        <section className={styles.description}>
+
+          <section className={styles.mainDescription}>
+            <h1>Somos um servidor <span>focado em transição de</span> carreira</h1>
+            <p>Temos desafios, lives, eventos, tiramos dúvidas e até achamos uma colocação para você. Quer fazer parte? Clique no botão abaixo:</p>
+            <button className={styles.participateButton}>Participar</button>
+          </section>
+
+            <section className={styles.asideImages}>
+              <div className={styles.wrapperImage}>
+                <img className={styles.purpleBall} src="/Oval.png" alt='uma bola de tom roxo azulado no canto esquerdo da tela, pela metade.'/>
+              </div>
+
+              <img className={styles.womanImage} 
+              src="/woman.png" 
+              alt='uma mulher branca, com longos cabelos ruivos, vestindo uma beca de formatura de faculdade. ela está sorrindo, segurando três livros.'
+              />
+            </section>
+
+        </section>
+
+        <section className={styles.ourCommitment}>
+          <h2>Nosso Compromisso</h2>
+          <p>Temos um compromisso de fazer desafios e gerar avaliações precisas para que você saiba o quanto está evoluíndo. Acreditamos que você merece uma avaliação justa e precisa do seu processo.</p>
+        </section>
+
+      </main>
       
     </div>
   )

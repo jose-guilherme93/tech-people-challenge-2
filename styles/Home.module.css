@@ -1,23 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
 
+/* =======MENU NAVIGATION======== */
 
-.header {
+.nav {
   display: flex;
+  justify-content: flex-end;
   flex: 2;
-  width: 100%;
-  height: 7.31rem;
   
-}
-
-.imageLogo Image {
-  height: 1.68rem;
 }
 
 .ul {
   display: flex;
   flex: 2;
   justify-content: space-between;
+  align-items: center;
+  margin-left: 7.4rem;
 }
 
 .ul li {
@@ -25,26 +23,144 @@
   padding-right: 2.12rem;
 }
 
+.imageLogo {
+  width: 14.5rem;
+  height: 4.68rem;
+}
+
+.imageLogo li a * {
+  padding: 0;
+  margin: 0;
+  background-color: #8471FF;
+}
+
  .leftMenu li:last-child {
   padding-right: 6.75rem;
+  
+}
+.leftMenu * {
+  transition: .5s;
+
 }
 
-
-
-
-
-
-.img {
-  height: 100px;
+.leftMenu li *:hover {
+  color: #8471FF;
+  transition: all .3s ease-out;
 }
 
+.leftMenu *:focus {
+  color: #8471FF;
+  transition: .3s all ease;
+}
+
+/* ==========MAIN DESCRIPTION========== */
+
+.main {
+  width: 100%;
+  max-width: 1400px;
+  
+}
+.description {
+  display: flex;
+  flex: 2;
+  margin-left: 9.5rem;
+  
+}
+
+.mainDescription {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 128px;
+}
+
+.mainDescription h1 {
+   font-size: 3.5rem;
+   margin: 0;
+}
+
+.mainDescription p{
+  color:#7D7D7D;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mainDescription h1 span {
+  color: #8471FF;
+}
+
+.participateButton {
+  background-color: #8471FF;
+  background-image: url('/arrow-down.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: right 18px center;
+  color: white;
+  width: 16.37rem;
+  height: 4rem;
+
+   
+  border: none;
+  border-radius: 11px;
+  font-family: 'Roboto';
+  font-size: 22px;
+  transition: .3s;
+}
+
+.participateButton:hover { 
+  background-color: #8471ffd8;
+  transition: .3s;
+
+}
+
+.participateButton:active { 
+  color: #8471FF;
+} 
 
 
+.wrapperImage img {
+  overflow: hidden;
+  width: 490px;
+  
+}
 
+.purpleBall {
+  z-index: -1;
+  position: absolute;
+  top: 270px;  
+}
 
+.womanImage {
+  position: relative;
+  z-index: 2;
+  right: 128px;
+  top: 4px;
 
+}
 
+.ourCommitment {
+  background-color: var(--bg);
+  width: 100%;
+  padding-top: 8.56rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right:15.37rem;
+  padding-left: 15.37rem;
+  
+}
 
+.ourCommitment h2 {
+  font-family: 'roboto', serif;
+  font-size: 37px;
+}
+
+.ourCommitment p {
+  font-family: 'roboto', serif;
+  color:#7D7D7D;
+}
 
 
 
