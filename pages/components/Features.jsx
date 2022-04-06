@@ -2,7 +2,6 @@
 import styles from '../../styles/Home.module.css'
 
  const Features = () => {
-
     
     return (
         <>
@@ -17,8 +16,9 @@ import styles from '../../styles/Home.module.css'
                     <h4>Apoio pós-desafio</h4>
                     <p>Você saberá como está evoluindo, e nós aprendemos a deixar o nosso processo avaliativo mais seguro e de confiança.</p>
                 </section>
+
                 <section className={styles.features}>
-                     <img className={styles.timerPhoto} src="img-features/check.svg" alt="um simbolo de tarefa completada ." />
+                    <img className={styles.timerPhoto} src="img-features/check.svg" alt="um simbolo de tarefa completada ." />
                     <h4>Avaliar o que faz sentido</h4>
                     <p>Nada de algoritmo de número primo ou de árvore binária. Nossos desafios se basearão no que você realmente vai trabalhar no futuro.</p>
                 </section>

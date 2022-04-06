@@ -3,72 +3,108 @@
 
 /* =======MENU NAVIGATION======== */
 
+
 .nav {
-  display: flex;
-  justify-content: flex-end;
-  flex: 2;
+  max-width: 1400px;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  background-color: var(--bg);
+}
+
+.scrollChange {
   
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: var(--globalTheme);
+  transition: .3s;
+
+}
+.mudanca .leftMenu *, .mudanca {
+  color: white;
 }
 
+.mudanca svg {
+  height: 3.12rem;
+}
+
+.mudanca .svg * {
+  font-size: 3px;
+  fill: white;
+}
+
+.svg {
+  transition: all ease .2s;
+}
+
+.imageLogoMenu, .leftMenu {
+  width: 50vw;
+}
 .ul {
-  display: flex;
-  flex: 2;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 7.4rem;
+  padding: 0;
 }
 
-.ul li {
-  display: inline;
-  padding-right: 2.12rem;
+.ul, .leftMenu {
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
 }
 
 .imageLogo {
-  width: 14.5rem;
-  height: 4.68rem;
+  margin-left: 9.25rem;
+}
+
+.links {
+  padding-left: 3.93rem;
+}
+
+.ul .leftMenu:last-child {
+  padding-right: 6.75rem;
+}
+.ul .leftMenu {
+  justify-content: flex-end;
+}
+
+.links {
+  color: #373737;
 }
 
 .imageLogo li a * {
-  padding: 0;
-  margin: 0;
-  background-color: #8471FF;
-}
-
- .leftMenu li:last-child {
-  padding-right: 6.75rem;
   
-}
-.leftMenu * {
-  transition: .5s;
-
+  background-color: var(--globalTheme);
+  
 }
 
 .leftMenu li *:hover {
-  color: #8471FF;
+  color: var(--globalTheme);
   transition: all .3s ease-out;
 }
 
 .leftMenu *:focus {
-  color: #8471FF;
+  color: var(--globalTheme);
   transition: .3s all ease;
 }
+
 
 /* ==========MAIN DESCRIPTION========== */
 
 .main {
   width: 100%;
   max-width: 1400px;
-  
+  position: relative;
+  top: 6.3rem;
 }
+
 .description {
   display: flex;
   flex: 2;
-  margin-left: 9.5rem;
+  margin-left: 9.25rem;
   
 }
 
 .mainDescription {
-  width: 50vw;
+  width: 48.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,55 +116,56 @@
    margin: 0;
 }
 
-.mainDescription p{
+.mainDescription p {
   color:#7D7D7D;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 .mainDescription h1 span {
-  color: #8471FF;
+  color: var(--globalTheme);
 }
 
 .participateButton {
-  background-color: #8471FF;
-  background-image: url('/arrow-down.png');
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right 18px center;
+  
+  background: right 18px center no-repeat url('/arrow-down.png') var(--globalTheme);
   color: white;
   width: 16.37rem;
   height: 4rem;
 
-   
   border: none;
   border-radius: 11px;
   font-family: 'Roboto';
   font-size: 22px;
   transition: .3s;
+  cursor: pointer;
 }
 
-.participateButton:hover { 
-  background-color: #8471ffd8;
-  transition: .3s;
-
+.participateLink {
+  color: white;
+  
+  position: relative;
+  z-index: 1;
+  right: 45px;
 }
 
 .participateButton:active { 
-  color: #8471FF;
-} 
-
-
-.wrapperImage img {
-  overflow: hidden;
-  width: 490px;
-  
+  color: var(--globalTheme);
 }
 
-.purpleBall {
+.asideImages svg {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapperImage svg {
+  overflow: hidden;
+  width: 579px;
   z-index: -1;
   position: absolute;
-  top: 270px;  
+  top: 150px;
+  right: 0px;
+  
 }
 
 .womanImage {
@@ -160,11 +197,51 @@
 .ourCommitment p {
   font-family: 'roboto', serif;
   color:#7D7D7D;
+  margin-bottom: 4rem;
 }
 
+/* FEATURES SECTION  */
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 3;
+  flex-wrap: wrap;
+  background-color: var(--bg);
+  width: 100%;
+  height: 100%;
+}
 
+.features {
+  margin: 1rem;
+  width: 21.4rem;
+  height: 21.93rem;
+  background-color: #FFFFFF;
+  border-radius: .9rem;
+  padding: 1.9rem;
+}
 
+.features img {
+  width: 76px;
+  transition: all ease .5s;
+}
+
+.features img:hover {
+  width: 84px;
+}
+
+.features h4 {
+  font-family: 'Roboto';
+  color: #37474F;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.features p {
+  color: rgba(55, 71, 79, 0.721569);
+
+}
 
 
 
