@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unknown-property */
- 
 /* eslint-disable @next/next/no-img-element */
-import React, {useState, useEffect, useRef} from 'react'
+
+import React, {useState, useEffect} from 'react'
 
 import Head from 'next/head'
 
 import Header from '../pages/components/Header'
 import Features from './components/Features'
+import News from './components/News'
 
 
 import styles from '../styles/Home.module.css'
@@ -15,7 +16,6 @@ export default function Home() {
 
   function hrefParticipateButton(){
     window.location.href = '#ourCommitment'
-    
   }
  
 
@@ -83,9 +83,8 @@ export default function Home() {
           <p>Temos um compromisso de fazer desafios e gerar avaliações precisas para que você saiba o quanto está evoluíndo. Acreditamos que você merece uma avaliação justa e precisa do seu processo.</p>
         </section>
 
-        
-
         <Features />
+        <News />
             
       </main>
       
