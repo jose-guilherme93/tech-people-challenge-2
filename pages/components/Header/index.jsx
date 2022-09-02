@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRef, useState } from 'react'
-import styles from '../../styles/Home.module.css'
+import { useRef } from 'react'
+import styles from './style.module.css'
 
 export default function Header({scrollChange} ) {
   const nav = useRef(0)
@@ -46,11 +46,11 @@ export default function Header({scrollChange} ) {
             </div>  
 
             <div className={styles.leftMenu}>
-              <li><a className={styles.links} href="#home">Home</a></li>
+              <li><a className={styles.links} href="#">Home</a></li>
               <li><a className={styles.links} href="#ourCommitment">Compromisso</a></li>
-              <li><a className={styles.links} href="#">Notícias</a></li>
-              <li><a className={styles.links} href="#">Agenda</a></li>
-              <li><a className={styles.links} href="#">ìcone</a></li>
+              <li><a className={styles.links} href="#news">Notícias</a></li>
+              <li><a className={styles.links} href="#calendar">Agenda</a></li>
+              <li><a className={styles.links} href="#">ícone</a></li>
 
             </div>
           </ul>

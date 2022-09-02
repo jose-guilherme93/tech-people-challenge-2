@@ -1,0 +1,85 @@
+/* MENU NAVIGATION */
+
+
+.nav {
+    max-width: 1400px;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--bg);
+  }
+  
+  .scrollChange {
+    
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--globalTheme);
+    transition: .3s;
+  
+  }
+  .mudanca .leftMenu *, .mudanca {
+    color: white;
+  }
+  
+  .mudanca svg {
+    height: 6rem;
+  }
+  
+  .mudanca .svg * {
+    font-size: 3px;
+    fill: white;
+  }
+  
+  .svg {
+    transition: all ease .2s;
+  }
+  
+  .imageLogoMenu, .leftMenu {
+    width: 50vw;
+  }
+  .ul {
+    padding: 0;
+  }
+  
+  .ul, .leftMenu {
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+  }
+  
+  .imageLogo {
+    margin-left: 9.25rem;
+  }
+  
+  .links {
+    padding-left: 3.93rem;
+  }
+  
+  .ul .leftMenu:last-child {
+    padding-right: 6.75rem;
+  }
+  .ul .leftMenu {
+    justify-content: flex-end;
+  }
+  
+  .links {
+    color: #373737;
+  }
+  
+  .imageLogo li a * {
+    
+    background-color: var(--globalTheme);
+    
+  }
+  
+  .leftMenu li *:hover {
+    color: var(--globalTheme);
+    transition: all .3s ease-out;
+  }
+  
+  .leftMenu *:focus {
+    color: var(--globalTheme);
+    transition: .3s all ease;
+  }
+  

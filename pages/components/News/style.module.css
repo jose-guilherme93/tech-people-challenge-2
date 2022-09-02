@@ -1,0 +1,68 @@
+/* NEWS COMPONTENT */
+
+.containerWrapper {
+    background-color: var(--bg);
+  }
+  
+  .containerWrapper h2, .containerWrapper p {
+    text-align: center;
+    font-family: 'Roboto';
+    color: #373737;
+  
+  }
+  
+  .containerWrapper p {
+    color:#656465;
+    padding-bottom: 4.93rem;
+  
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  
+  .gridContainer div {
+    transition: all ease;
+    width: 21.5rem;
+    height: 25.37rem;
+    background-color: #FFFFFF;
+    border-radius: .6rem;
+    margin-bottom: 4rem ;
+  
+    -webkit-box-shadow: 0px 0px 67px -17px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 67px -17px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 67px -17px rgba(0,0,0,0.29);
+    
+  }
+  
+  .date span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #656465;
+  
+  }
+  
+  .date > p  {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    
+    text-align: left;
+  
+  }
+  
+  
+  .calendarImage {
+    padding-left: 1.6rem;
+    padding-right: .9rem;
+    margin-top: 1.5rem;
+  }
+  
