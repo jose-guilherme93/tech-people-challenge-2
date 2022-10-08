@@ -1,48 +1,39 @@
 /* MENU NAVIGATION */
 
-
 .nav {
-    max-width: 1400px;
-    width: 100vw;
+   
+    width: 100%;
     position: fixed;
     z-index: 10;
     background-color: var(--bg);
   }
   
-  .scrollChange {
-    
+.scrollChange {
     width: 100%;
     position: fixed;
     z-index: 10;
     background-color: var(--globalTheme);
     transition: .3s;
+    height: 5.56rem;
+}
+ 
   
-  }
-  .mudanca .leftMenu *, .mudanca {
-    color: white;
-  }
-  
-  .mudanca svg {
-    height: 6rem;
-  }
-  
-  .mudanca .svg * {
-    font-size: 3px;
-    fill: white;
-  }
+ 
   
   .svg {
     transition: all ease .2s;
+    height: 3.12rem;
   }
   
   .imageLogoMenu, .leftMenu {
     width: 50vw;
   }
+
   .ul {
     padding: 0;
   }
   
-  .ul, .leftMenu {
+  .ul, .rightMenu {
     display: flex;
     max-width: 1400px;
     align-items: center;
@@ -56,10 +47,11 @@
     padding-left: 3.93rem;
   }
   
-  .ul .leftMenu:last-child {
+  .ul .rightMenu:last-child {
     padding-right: 6.75rem;
   }
-  .ul .leftMenu {
+
+  .ul .rightMenu {
     justify-content: flex-end;
   }
   
@@ -68,18 +60,17 @@
   }
   
   .imageLogo li a * {
-    
-    background-color: var(--globalTheme);
-    
+    background-color: var(--globalTheme); 
   }
   
-  .leftMenu li *:hover {
-    color: var(--globalTheme);
-    transition: all .3s ease-out;
-  }
-  
-  .leftMenu *:focus {
+  .rightMenu *:focus {
     color: var(--globalTheme);
     transition: .3s all ease;
   }
   
+  @media (max-width: 700px) {
+    .rightMenu {
+      display: none;
+
+    }
+  }

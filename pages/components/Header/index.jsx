@@ -1,21 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRef } from 'react'
 import styles from './style.module.css'
 
 export default function Header({scrollChange} ) {
-  const nav = useRef(0)
-  
-  
-  const teste = nav.current.offsetHeight
-    console.log(teste)
-  
-  
-    const mudaTambem = scrollChange ? 'mudanca' : 'nav'
-    const scrollClassName = scrollChange ? 'scrollChange' : 'nav'
-
+   
     return (
       <header className={styles.header}>
-        <nav ref={nav} className={`${styles[scrollClassName]} ${styles[mudaTambem]}`}>
+        <nav className={`${styles[scrollChange ? 'scrollChange' : 'nav']}`}>
           <ul className={styles.ul}>
             <div className={styles.imageLogoMenu}>
               <li className={styles.imageLogo}>
@@ -41,17 +31,17 @@ export default function Header({scrollChange} ) {
                   <path d="M194.714 61.3573C194.643 61.8573 194.143 62.2145 193.643 62.2145H190.071C188.357 62.2145 187.071 62.0002 186.429 61.643C185.714 61.2859 185.357 60.5716 185.357 59.4287C185.357 58.8573 185.429 58.2859 185.571 57.5716L188.643 41.643C188.714 41.143 189.214 40.7859 189.714 40.7859H192.5C193.143 40.7859 193.714 41.4287 193.571 42.0716L190.5 57.7859C190.5 57.8573 190.429 57.9287 190.429 58.0002C190.429 58.2859 190.643 58.4288 191.143 58.4288H193.929C194.571 58.4288 195.143 59.0716 195 59.7145L194.714 61.3573Z" fill="#0D0F0F"/>
                   <path d="M217.357 61.3574C217.286 61.8574 216.786 62.2145 216.286 62.2145H204.429C202.357 62.2145 201 61.9288 200.214 61.2859C199.5 60.6431 199.286 59.4288 199.643 57.6431L200.929 51.2145C201.286 49.3573 201.857 48.1431 202.714 47.5002C203.5 46.9288 204.929 46.6431 206.857 46.6431H214.714C216.786 46.6431 218.143 46.9288 218.929 47.5716C219.714 48.2145 219.929 49.3573 219.571 51.2145L218.786 55.3574C218.714 55.8574 218.214 56.2145 217.714 56.2145H204.643L204.286 58.0716C204.214 58.2859 204.214 58.5002 204.357 58.5716C204.429 58.6431 204.643 58.7145 204.929 58.7145H216.571C217.214 58.7145 217.786 59.3574 217.643 60.0002L217.357 61.3574ZM214.571 53.1431L215 50.6431C215.071 50.3574 215.071 50.2145 214.929 50.1431C214.857 50.0716 214.643 50.0002 214.357 50.0002H206.5C206.214 50.0002 206 50.0716 205.857 50.1431C205.714 50.2145 205.643 50.3574 205.571 50.6431L205.143 53.1431H214.571Z" fill="#0D0F0F"/>
                   </svg>
-                </a> 
+                </a>
+                
               </li>
-            </div>  
+            </div>
 
-            <div className={styles.leftMenu}>
+            <div className={styles.rightMenu}>
               <li><a className={styles.links} href="#">Home</a></li>
               <li><a className={styles.links} href="#ourCommitment">Compromisso</a></li>
               <li><a className={styles.links} href="#news">Notícias</a></li>
-              <li><a className={styles.links} href="#calendar">Agenda</a></li>
+              <li><a className={styles.links} href="#agenda">Agenda</a></li>
               <li><a className={styles.links} href="#">ícone</a></li>
-
             </div>
           </ul>
         </nav>
