@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './style.module.css'
 
- const Features = (props) => {
+ export default function Features(props) {
     
     return (
         <>
@@ -41,4 +41,3 @@ import styles from './style.module.css'
     )
 }
 
-export default Features

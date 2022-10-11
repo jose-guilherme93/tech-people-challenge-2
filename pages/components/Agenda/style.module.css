@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swipperComponent {
+    display: flex;
+    justify-items: center;
+    
+    text-align: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+
+.wrapper > p {
+    margin-top: 2rem;
+    
+}
+
+.subtitle, .paragraph {
+    text-align: center;
+    
+}
+
+.paragraph {
+    color:#37474FB8;
+}
+
+

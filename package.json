@@ -12,10 +12,26 @@
     "@svgr/webpack": "^6.2.1",
     "next": "^12.1.5",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
+    "swiper": "^8.3.2",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jose-guilherme93/tech-people-challenge-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jose-guilherme93/tech-people-challenge-2/issues"
+  },
+  "homepage": "https://github.com/jose-guilherme93/tech-people-challenge-2#readme"
 }

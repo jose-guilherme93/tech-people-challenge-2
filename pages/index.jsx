@@ -1,5 +1,5 @@
-/* eslint-disable react/no-unknown-property */
 /* eslint-disable @next/next/no-img-element */
+
 
 import React, {useState, useEffect} from 'react'
 
@@ -8,12 +8,14 @@ import Head from 'next/head'
 import Header from './components/Header'
 import Features from './components/Features'
 import News from './components/News'
+import Agenda from './components/Agenda'
 
+import { commitments, infoNews } from './contents'
 
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-
+  
   function hrefParticipateButton(){
     window.location.href = '#ourCommitment'
   }
@@ -24,48 +26,12 @@ export default function Home() {
     function handleScrollChange() {
       if (window.scrollY > 20) {
         setScrollColorChange(true)
-      }
+      } else setScrollColorChange(false)
     }
 
     window.addEventListener('scroll', handleScrollChange)
   })
 
-  const commitments = {
-    icon: {
-      starPhoto: "img-features/star.svg",
-      hatPhoto: "img-features/hat.svg",
-      feedbackPhoto: "img-features/check.svg",
-      weatherCockPhoto: "img-features/weathercock.svg",
-      timerPhoto: "img-features/timer.svg",
-      bagPhoto: "img-features/bag.svg",
-
-    },
-    subtitle: [
-      "Avaliar positivamente",
-      "Apoio pós-desafio",
-      "Avaliar o que faz sentido",
-      "Liberdade na escolha",
-      "Nada de prazos irreais",
-      "Contra o apagão da TI",
-    ],
-    paragraph: [
-      "Entendemos que você está aprendendo. A gente também passou por esta fase, e sabemos que as coisas mudam muito rápido.",
-      "Você saberá como está evoluindo, e nós aprendemos a deixar o nosso processo avaliativo mais seguro e de confiança.",
-      "Nada de algoritmo de número primo ou de árvore binária. Nossos desafios se basearão no que você realmente vai trabalhar no futuro.",
-      "Temos nossas preferências, mas a decisão de qual tecnologia você quer fazer o desafio fica a seu critério.",
-      "Temos nossa rotina de trabalho, família e vida pessoal. Faça no seu tempo. Corrigiremos no nosso tempo também!",
-      "Se você for bem neste desafio, vamos ter prazer em te indicar para vagas em empresas parceiras. Não temos vagas, mas temos um networking gigantesco.",
-    ],
-    alt: ["um ícone em forma de uma estrela azul", "um ícone de um chapéu de formatura", "um simbolo de tarefa completada .", "um ícone de catavento", "um cronômetro com uma lista sobreposta na diagonal", "um ícone de uma maleta de trabalho, com uma alça."]
-  }
-
-  const infoNews = {
-    image: ["/img-news/img-news-1.jpg", "/img-news/img-news-2.png", "/img-news/img-news-3.png" ],
-    date: "17 abr 2020",
-    paragraph: "Como apoiar uma desenvolvedora em início de carreira?",
-    
-  }
-  
   return (
     <div className={styles.container}>
       <Head>
@@ -97,13 +63,14 @@ export default function Home() {
                 <ellipse opacity="0.702497" cx="515" cy="290.5" rx="515" ry="290.5" fill="url(#paint0_linear_0_10)"/>
                 <defs>
                 <linearGradient id="paint0_linear_0_10" x1="243.675" y1="-21.768" x2="213.797" y2="285.353" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#8471FF"/>
-                <stop offset="1" stop-color="#717CFF"/>
+                <stop stopColor="#8471FF"/>
+                <stop offset="1" stopColor="#717CFF"/>
                 </linearGradient>
                 </defs>
                 </svg>
               </div>
 
+              
               <img className={styles.womanImage} 
               src="/woman.png" 
               alt='uma mulher branca, com longos cabelos ruivos, vestindo uma beca de formatura de faculdade. ela está sorrindo, segurando três livros.'
@@ -130,9 +97,8 @@ export default function Home() {
         date={infoNews.date} 
         paragraph={infoNews.paragraph}
          > 
-          
         </News>
-            
+        <Agenda />
       </main>
       
     </div>
