@@ -1,25 +1,18 @@
 /* MENU NAVIGATION */
 
 .nav {
-   
-    width: 100%;
     position: fixed;
     z-index: 10;
     background-color: var(--bg);
   }
-  
+
 .scrollChange {
-   
     position: fixed;
     z-index: 10;
     background-color: var(--globalTheme);
     transition: .3s;
     height: 5.56rem;
 }
- 
-  
- 
-  
   .svg {
     transition: all ease .2s;
     height: 3.12rem;

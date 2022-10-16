@@ -16,14 +16,14 @@ export default function News(props) {
                         <a href="https://www.tabnews.com.br/" rel='noopener noreferrer' target="_blank"><p>Participe da nossa Live sobre React e testes TDD</p></a>
                     </div>
                     <div className={styles.date}>                        
-                        <img src={props.image[1]} alt="rwere" />
+                        <img src={props.image[1]} alt="calendário" />
                         <img className={styles.calendarImage} src="/img-news/calendar.png" alt="" />
                         <span>17 abr 2020</span>
-                        <a href="https://www.tabnews.com.br/" rel='noopener noreferrer' target="_blank"><p>Participe da nossa live de Nuxt para a Turing</p></a>
+                        <a href="https://www.tabnews.com.br/" rel='noopener noreferrer' target="_blank"><p>{props.paragraph}</p></a>
                     </div>
                     <div className={styles.date}>         
-                        <img src={props.image[2]} alt="rwer" />
-                        <img className={styles.calendarImage} src="/img-news/calendar.png" alt="" /> 
+                        <img src={props.image[2]} alt="calendário" />
+                        <img className={styles.calendarImage} src="/img-news/calendar.png" alt="calendário" /> 
                         <span>{props.date}</span>
                         <p><a href="https://www.tabnews.com.br/" rel='noopener noreferrer' target="_blank">{props.paragraph}</a></p>
                     </div>

@@ -22,7 +22,7 @@ export default function Agenda() {
             <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay]}
             slidesPerView={"auto"}
-            spaceBetween={40}
+            spaceBetween={10}
             autoplay={false}
             a11y={true}
             pagination={true}
