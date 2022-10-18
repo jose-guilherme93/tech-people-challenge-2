@@ -10,12 +10,29 @@
     position: fixed;
     z-index: 10;
     background-color: var(--globalTheme);
-    transition: .3s;
+    transition: .2s;
     height: 5.56rem;
+    
 }
+
+.scrollChange ul li a{
+  
+  color: aliceblue;
+}
+.scrollChange .imageLogo li a svg{
+  
+  background-color: aliceblue;
+}
+
   .svg {
     transition: all ease .2s;
     height: 3.12rem;
+    
+  }
+
+  .scrollChange .svg svg {
+    
+    color: antiquewhite;
   }
   
   .imageLogoMenu, .leftMenu {
@@ -56,14 +73,8 @@
     background-color: var(--globalTheme); 
   }
   
-  .rightMenu *:focus {
-    color: var(--globalTheme);
-    transition: .3s all ease;
+  .rightMenu *:hover {
+    color: #eee;
+    transition: .1s ease;
   }
   
-  @media (max-width: 700px) {
-    .rightMenu {
-      display: none;
-
-    }
-  }
