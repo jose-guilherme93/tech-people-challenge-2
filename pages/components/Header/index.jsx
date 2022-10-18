@@ -11,13 +11,12 @@ export default function Header({scrollChange} ) {
             <div className={styles.imageLogoMenu}>
               <li className={styles.imageLogo}>
                 <a href="#">
-
-               {scrollChange ? 
-               <img src="/tech-logo-white.svg" alt="logo pessoas de tech branco" />
+              {scrollChange ? 
+               <img src="/img-header/tech-logo-white.svg" alt="logo pessoas de tech branco" />
                :
-               <img className={styles.svg} src="/tech-logo-black.svg" alt="logo pessoas de tech preto" />
-  }
-                  </a>
+               <img className={styles.svg} src="/img-header/tech-logo-black.svg" alt="logo pessoas de tech preto" />
+              }
+                </a>
                 
               </li>
             </div>

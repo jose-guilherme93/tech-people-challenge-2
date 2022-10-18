@@ -19,20 +19,12 @@
   
   color: aliceblue;
 }
-.scrollChange .imageLogo li a svg{
-  
-  background-color: aliceblue;
-}
+
 
   .svg {
     transition: all ease .2s;
     height: 3.12rem;
     
-  }
-
-  .scrollChange .svg svg {
-    
-    color: antiquewhite;
   }
   
   .imageLogoMenu, .leftMenu {
