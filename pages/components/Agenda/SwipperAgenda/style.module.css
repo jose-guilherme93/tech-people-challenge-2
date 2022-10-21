@@ -8,8 +8,6 @@
     box-shadow: 0px 0px 67px -17px rgba(0,0,0,0.29);
 }
 
-
-
 .wrapperContent {
     display: flex;
     flex-wrap: wrap;
@@ -30,18 +28,6 @@
     line-height: 28px;
 }
 
-/* @media (max-width: 700px) {
-   
-    .wrapperContent > p  {
-        font-size: 12px;
-        flex-wrap: wrap;
-        width: 2.75rem;
-        border-radius: .5rem;
-        height: 2.75rem;
-        color: #717dff;
-        margin-left: 1rem;
-    }
-} */
 .wrapperContent .wrapperParagraphDate  {
     display: flex;
     justify-content: center;

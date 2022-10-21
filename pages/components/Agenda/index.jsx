@@ -21,9 +21,9 @@ export default function Agenda() {
         
             <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay]}
-            slidesPerView={"auto"}
-            spaceBetween={10}
-            autoplay={false}
+            slidesPerView={2}
+            
+            autoplay={true}
             a11y={true}
             pagination={true}
             breakpoints={{
@@ -33,7 +33,7 @@ export default function Agenda() {
                   pagination: false,
                   
                 },
-                1300: {
+                1000: {
                     slidesPerView: 2,
                     spaceBetween: 10,
                 },

@@ -1,14 +1,14 @@
 
 
-.swipperComponent {
-    display: flex;
-    justify-items: center;
-    
-    text-align: center;
-    justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-    
+
+.wrapper h2 {
+    font-family: 'Roboto';
+    color: #373737;
+    padding-top: 5.56rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 54px;
 }
 
 
@@ -17,6 +17,17 @@
     
 }
 
+.swipperComponent {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    
+}
 .subtitle, .paragraph {
     text-align: center;
     

@@ -1,0 +1,82 @@
+.wrapper {
+    height: 23.68rem;
+    width: 100%;
+    padding-left: 9.25rem;
+    margin-top: 5.75rem;
+}
+
+.wrapper h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 43px;
+    color: #252525;
+}
+.wrapper p {
+    color:#37474FB8;
+}
+
+.form input {
+    width: 18.29rem;
+    height: 4rem;
+    margin-right: 1.25rem;
+    border-radius: 0.68rem;
+    border: solid 1px #DEDEDE;
+    outline: none;
+    margin-bottom: 2rem;
+
+}
+.form input, .form input::placeholder  {
+
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.form input {
+    padding-left: 1.62rem;
+    color: #37474FD9;
+
+}
+
+.form input:hover {
+    outline: solid 2px #909090;
+    
+}
+
+
+.goBackButton, .buttonForm {
+    height: 4rem;
+    width: 16.37rem;
+    border: none;
+    border-radius: 0.68rem;
+    color: #ffff;
+    background: var(--globalTheme);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.buttonForm  {
+    background: right 18px center no-repeat url('/img-news/arrow-right.png') var(--globalTheme);
+    
+}
+
+
+.form button:hover {
+    background-color: #4654FD;
+    transition: all ease .3s;
+}
+
+@media (max-width: 1100px) {
+    .form button { 
+    width: 18.29rem;
+        
+    }
+}

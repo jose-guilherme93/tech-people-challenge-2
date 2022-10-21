@@ -74,7 +74,7 @@ export default function Home() {
 
               
               <img className={styles.womanImage} 
-              src="/woman.png" 
+              src="img-home/woman.png" 
               alt='uma mulher branca, com longos cabelos ruivos, vestindo uma beca de formatura de faculdade. ela está sorrindo, segurando três livros.'
               />
             </section>

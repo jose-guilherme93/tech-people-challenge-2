@@ -3,6 +3,18 @@
 .containerWrapper {
     background-color: var(--bg);
   }
+
+  
+  .containerWrapper h2 {
+    padding-top: 5.56rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 54px;
+
+
+  }
   
   .containerWrapper h2, .containerWrapper p {
     text-align: center;

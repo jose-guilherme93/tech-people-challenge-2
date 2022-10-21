@@ -12,6 +12,7 @@
     height: 100%;
   }
   
+
   .features {
     margin: 1rem;
     width: 21.4rem;
@@ -39,4 +40,5 @@
   
   .features p {
     color: rgba(55, 71, 79, 0.721569);
+    
   }
