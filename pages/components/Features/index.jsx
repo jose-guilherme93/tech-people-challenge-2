@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './style.module.css'
 
-import {commitments} from '../../index'
+import {commitments} from '../../contents'
  export default function Features() {
     return (
         <>
