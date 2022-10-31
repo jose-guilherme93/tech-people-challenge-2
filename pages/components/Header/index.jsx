@@ -1,12 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
+import {useRef} from 'react'
 import styles from './style.module.css'
 
+export default function Header({scrollChange, setNavRef} ) {
+  const navRef = useRef(0)
+  const valueNavRef = navRef.current.value
 
-export default function Header({scrollChange} ) {
-   
+  valueNavRef > 0 ? setNavRef(valueNavRef) : ''
+  console.log(valueNavRef)
+  
     return (
-      <header className={styles.header}>
-        <nav className={`${styles[scrollChange ? 'scrollChange' : 'nav']}`}>
+      <header ref={navRef} className={styles.header}>
+        <nav ref={navRef} className={`${styles[scrollChange ? 'scrollChange' : 'nav']}`}>
           <ul className={styles.ul}>
             <div className={styles.imageLogoMenu}>
               <li className={styles.imageLogo}>

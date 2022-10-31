@@ -10,10 +10,7 @@ import Agenda from './components/Agenda'
 import Form from './components/Form'
 import Footer from './components/Footer'
 
-
 import styles from '../styles/Home.module.css'
-
-
 
 export default function Home() {
   
@@ -23,16 +20,17 @@ export default function Home() {
  
   const [scrollColorChange, setScrollColorChange] = useState(false)
   
+  const [navRef, setNavRef] = useState(0)
   useEffect(() => {
     function handleScrollChange() {
-      if (window.scrollY > 20) {
+      if (window.scrollY > navRef) {
         setScrollColorChange(true)
       } else setScrollColorChange(false)
     }
-
+    
     window.addEventListener('scroll', handleScrollChange)
   })
-
+  console.log(navRef)
   return (
     <div className={styles.container}>
       <Head>
@@ -43,7 +41,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
       </Head>
      
-      <Header scrollChange={scrollColorChange}/>
+      <Header scrollChange={scrollColorChange} setNavRef={setNavRef}/>
 
       <main className={styles.main}>
         <section className={styles.description}>
