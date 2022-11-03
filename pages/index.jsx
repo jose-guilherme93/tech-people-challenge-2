@@ -30,7 +30,7 @@ export default function Home() {
     
     window.addEventListener('scroll', handleScrollChange)
   })
-  console.log(navRef)
+  
   return (
     <div className={styles.container}>
       <Head>

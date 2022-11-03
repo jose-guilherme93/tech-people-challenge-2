@@ -1,9 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './style.module.css'
 
-import {infoNews} from '../../contents'
+
 
 export default function News() {
+    const infoNews = {
+        image: ["/img-news/img-news-1.jpg", "/img-news/img-news-2.png", "/img-news/img-news-3.png" ],
+        date: "17 abr 2020",
+        paragraph: "Como apoiar uma desenvolvedora em início de carreira?",
+        
+      }
     
     return (
         <>  
