@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './style.module.css'
 
 import {TailSpin} from 'react-loader-spinner'
+
 export default function Loading() {
     return (
      <div className={styles.spinner}>
