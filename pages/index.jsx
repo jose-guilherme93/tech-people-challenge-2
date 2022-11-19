@@ -40,7 +40,10 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
      
-      <Header scrollChange={scrollColorChange} setNavRef={setNavRef}/>
+      <Header 
+        scrollChange={scrollColorChange} 
+        setNavRef={setNavRef}
+      />
 
       <main className={styles.main}>
         <section className={styles.description}>
@@ -57,14 +60,32 @@ export default function Home() {
 
             <section className={styles.asideImages}>
               <div className={styles.wrapperImage}>
-                <svg className={styles.purpleBall} width="579" height="581" viewBox="0 0 579 581" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse opacity="0.702497" cx="515" cy="290.5" rx="515" ry="290.5" fill="url(#paint0_linear_0_10)"/>
-                <defs>
-                <linearGradient id="paint0_linear_0_10" x1="243.675" y1="-21.768" x2="213.797" y2="285.353" gradientUnits="userSpaceOnUse">
-                <stop stopColor="#8471FF"/>
-                <stop offset="1" stopColor="#717CFF"/>
-                </linearGradient>
-                </defs>
+                <svg 
+                  className={styles.purpleBall} 
+                  width="579" 
+                  height="581" 
+                  viewBox="0 0 579 581" 
+                  fill="none" 
+                  xmlns="http://www.w3.org/2000/svg">
+                  <ellipse 
+                    opacity="0.702497" 
+                    cx="515" 
+                    cy="290.5" 
+                    rx="515" 
+                    ry="290.5" 
+                    fill="url(#paint0_linear_0_10)"/>
+                  <defs>
+                    <linearGradient 
+                      id="paint0_linear_0_10" 
+                      x1="243.675" 
+                      y1="-21.768" 
+                      x2="213.797" 
+                      y2="285.353" 
+                      gradientUnits="userSpaceOnUse">
+                      <stop stopColor="#8471FF"/>
+                      <stop offset="1" stopColor="#717CFF"/>
+                    </linearGradient>
+                  </defs>
                 </svg>
               </div>
 
@@ -73,11 +94,15 @@ export default function Home() {
               src="img-home/woman.png" 
               alt='uma mulher branca, com longos cabelos ruivos, vestindo uma beca de formatura de faculdade. ela está sorrindo, segurando três livros.'
               />
+              
+                
+              
             </section>
-
         </section>
 
         <section className={styles.ourCommitment}>
+        
+          <div className={styles.rotateBar}></div>
           <h2 id="ourCommitment">Nosso Compromisso</h2>
           <p>Temos um compromisso de fazer desafios e gerar avaliações precisas para que você saiba o quanto está evoluíndo. Acreditamos que você merece uma avaliação justa e precisa do seu processo.</p>
         </section>

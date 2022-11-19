@@ -6,7 +6,7 @@
   max-width: 1400px;
   position: relative;
   top: 4.3rem;
-  
+  overflow: visible;
 }
 
 .description {
@@ -102,7 +102,9 @@
   flex-direction: column;
   padding-right:15.37rem;
   padding-left: 15.37rem;
+  position: relative;
   
+
 }
 
 .ourCommitment h2 {
@@ -132,3 +134,19 @@
   }
 }
 
+/*Rotate Bar */
+
+
+.rotateBar {
+  height: 8rem;
+  
+  position: absolute;
+  bottom: 350px;
+  z-index: 5;
+  width: 100%;
+  left: 10px;
+
+  background-color: var(--bg);
+  transform: rotate(-1deg);
+  
+}
