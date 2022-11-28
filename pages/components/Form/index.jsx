@@ -8,8 +8,6 @@ export default function Form() {
     useEffect(() => {
         setTimeout(() => {
             setIsClicked(false)
-            
-            
         }, 400)
         
     }, [])
@@ -18,7 +16,8 @@ export default function Form() {
     return (
            <div className={styles.wrapper}>
                 
-                    {isClicked ?
+                    {
+                    isClicked ?
                         <>
                             <Loading />
                             <button className={styles.goBackButton} onClick={() => setIsClicked(false)}>voltar</button>  

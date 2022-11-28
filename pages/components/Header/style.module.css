@@ -33,9 +33,10 @@
   
   }
 
-  .scrollChange .links {
-    color: white;
-  }
+.scrollChange .links {
+  color: white;
+}
+
 .rightMenu {
   display: flex;
   width: 50vw;
@@ -45,4 +46,9 @@
   word-wrap: break-word;
 }
 
+.rightMenu li a {
+
+  font-weight: 500;
+  font-size: 17px;
+}
 

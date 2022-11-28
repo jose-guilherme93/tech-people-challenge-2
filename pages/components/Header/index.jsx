@@ -35,12 +35,12 @@ export default function Header({scrollChange, setNavRef} ) {
            
           </div>
 
-          <div className={styles.rightMenu}>
+          <ul className={styles.rightMenu}>
             <li><a className={styles.links} href="#">Home</a></li>
             <li><a className={styles.links} href="#ourCommitment">Compromisso</a></li>
             <li><a className={styles.links} href="#news">Notícias</a></li>
             <li><a className={styles.links} href="#agenda">Agenda</a></li>
-          </div>
+          </ul>
           
         </nav>
     )
