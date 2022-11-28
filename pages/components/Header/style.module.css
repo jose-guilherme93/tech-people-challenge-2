@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: space-around;
   display: flex;
-  z-index: 10;
+  z-index: 5;
   top: 0px;
-  left: 0;
+  left: 0px;
   height: 5.56rem;
   background-color: var(--bg);
   position: sticky;
@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: space-around;
     display: flex;
-    z-index: 10;
+    z-index: 20;
     top: 0px;
     left: 0;
     background-color: var(--globalTheme);
@@ -50,5 +50,8 @@
 
   font-weight: 500;
   font-size: 17px;
+  color: black;
 }
+
+
 

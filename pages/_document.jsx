@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com"/>
         
       </Head>
       <body>

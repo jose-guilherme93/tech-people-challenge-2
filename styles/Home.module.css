@@ -11,7 +11,8 @@
   display: flex;
   flex: 2;
   margin-left: 9.25rem;
-  
+  position: relative;
+  overflow: hidden;
 }
 
 .mainDescription {
@@ -20,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   padding-right: 8rem;
+  padding-bottom: 14rem;
 }
 
 .mainDescription h1 {
@@ -54,8 +56,7 @@
 }
 
 .participateLink {
-  color: white;
-  
+  color: var(--bg);
   position: relative;
   z-index: 1;
   right: 45px;
@@ -65,18 +66,19 @@
   color: var(--globalTheme);
 }
 
-.asideImages svg {
+.asideImages .purpleBall {
   padding: 0;
   margin: 0;
 }
 
 .wrapperImage svg {
-  overflow: hidden;
-  width: 579px;
-  z-index: -1;
+  
+  width: 64.375rem;
+  height: 35.3125rem;
+  
   position: absolute;
-  top: 150px;
-  right: 0px;
+  top: 100px;
+  left: 400px;
   
 }
 
@@ -98,9 +100,7 @@
   flex-direction: column;
   padding-right:15.37rem;
   padding-left: 15.37rem;
-  position: relative;
   
-
 }
 
 .ourCommitment h2 {
@@ -133,11 +133,12 @@
 
 .rotateBar {
   height: 8rem;
-  position: absolute;
-  bottom: 350px;
-  z-index: 5;
+  
+  top: 500px;
+  z-index: 10;
   width: 100%;
   left: 10px;
+  position: absolute;
   background-color: var(--bg);
   transform: rotate(-1deg);
   

@@ -90,19 +90,18 @@ export default function Home() {
               </div>
 
               
-              <img className={styles.womanImage} 
-              src="img-home/woman.png" 
-              alt='uma mulher branca, com longos cabelos ruivos, vestindo uma beca de formatura de faculdade. ela está sorrindo, segurando três livros.'
+              <img 
+                className={styles.womanImage} 
+                src="img-home/woman.png" 
+                alt='uma mulher branca, com longos cabelos ruivos, vestindo uma beca de formatura de faculdade. ela está sorrindo, segurando três livros.'
               />
               
-                
-              
             </section>
+          <div className={styles.rotateBar}></div>
         </section>
 
         <section className={styles.ourCommitment}>
         
-          <div className={styles.rotateBar}></div>
           <h2 id="ourCommitment">Nosso Compromisso</h2>
           <p>Temos um compromisso de fazer desafios e gerar avaliações precisas para que você saiba o quanto está evoluíndo. Acreditamos que você merece uma avaliação justa e precisa do seu processo.</p>
         </section>
