@@ -1,8 +1,8 @@
 
  
 .main {
-  position: relative;
-  top: 4.3rem;
+  
+  top: 1.3rem;
 }
 
 .description {
@@ -27,14 +27,14 @@
   font-weight: 900;
   color: #2F2F2F;
   width: 39.5rem;
-  word-wrap: break-word;
+  
 
 }
 
 .mainDescription p {
   color:#7D7D7D;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  
   line-height: 2.375rem;
   font-size: 1.375rem;
   width: 39.5rem;
@@ -99,34 +99,43 @@
 
 .ourCommitment {
   background-color: var(--bg);
-  width: 100%;
   padding-top: 8.56rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-right:15.37rem;
-  padding-left: 15.37rem;
+  flex-wrap: wrap;
+  
   
 }
 
 .ourCommitment h2 {
+  width: 100%;
   color: #373737;
   font-family: 'Roboto';
-  font-style: normal;
+  
   font-weight: 700;
   font-size: 37px;
   line-height: 54px;
   padding-top: 5.56rem;
   text-align: center;
-  letter-spacing: -0.4625px;
+  
 
 }
 
+
 .ourCommitment p {
+  font-weight: 500;
   font-family: 'roboto', serif;
   color:#7D7D7D;
   margin-bottom: 4rem;
+  width: 100%;
+  height: 8.8125rem;
+  line-height: 2.375rem;
+  font-size: 22px;
+  text-align: center;
+  padding: 0 2rem;
 }
 
 
@@ -135,10 +144,10 @@
 
 .rotateBar {
   height: 14rem;
-  top: 500px;
+  bottom: 0;
   z-index: 10;
   width: 100%;
-  left: 10px;
+  
   position: absolute;
   background-color: var(--bg);
   transform: rotate(-1deg);
@@ -147,17 +156,16 @@
 @media (max-width: 700px) {
  .mainDescription {
   width: 100%;
-  padding: 0 2rem;
+  margin: 0 2rem;
+  
  }
   .mainDescription h1 {
     width: 100%;
     font-size: 2.5rem;
     flex-wrap: wrap;
-    align-items: center;
+    
     height: 100%;
-    
-    
-
+  
   }
 
   .mainDescription p {
@@ -179,7 +187,7 @@
     height: fit-content;
     
   }
-  .asideImages *  {
+  .asideImages  {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -190,8 +198,19 @@
     white-space: nowrap;
     border-width: 0;
   }
-  .rotateBar {
-    display: none;
-    
+  .rotateBar  {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
+.ourCommitment p {
+  width: 80%;
+}
+   
 }

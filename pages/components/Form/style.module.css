@@ -4,13 +4,14 @@
     height: auto;
     margin-bottom: 4rem;
     width: 100%;
-    margin-left: 9.25rem;
+    padding-left: 9.25rem;
     margin-top: 5.75rem;
+    
 }
 
 .wrapper h2 {
     width: 48.9375rem;
-    
+    margin-bottom: 0.875rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -20,6 +21,7 @@
 }
 .wrapper p {
     color:#37474FB8;
+    margin-bottom: 2.375rem;
 }
 
 .form input {
@@ -85,7 +87,6 @@ font-family: 'Roboto';
 @media (max-width: 700px) {
 
     .wrapper {
-
         margin: 1rem;
     }
 
