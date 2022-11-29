@@ -26,7 +26,7 @@ export default function Form() {
                         <>
                             <h2>Preparado para fazer parte da nossa iniciativa?</h2>
                             <p>Preencha todos os campos para que possamos entrar em contato.</p>
-                            <form className={styles.form} action=''>
+                            <form className={styles.form}>
                                 <input required type="text" aria-label="Nome completo" placeholder="Nome Completo"/>
                                 <input required type="email" aria-label="Email" placeholder="E-mail" />
                                 <input required type="tel" aria-label="Telefone" placeholder="Telefone Celular"/>

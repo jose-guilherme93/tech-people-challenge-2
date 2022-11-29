@@ -1,11 +1,16 @@
 .wrapper {
-    height: 23.68rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 4rem;
     width: 100%;
-    padding-left: 9.25rem;
+    margin-left: 9.25rem;
     margin-top: 5.75rem;
 }
 
 .wrapper h2 {
+    width: 48.9375rem;
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -74,9 +79,34 @@ font-family: 'Roboto';
     transition: all ease .3s;
 }
 
-@media (max-width: 1100px) {
-    .form button { 
-    width: 18.29rem;
-        
+
+
+
+@media (max-width: 700px) {
+
+    .wrapper {
+
+        margin: 1rem;
+    }
+
+    .wrapper h2 {
+        width: fit-content;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .wrapper p {
+        width: auto;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .form input {
+        width: 90%;
+    }
+    .form  button {
+        width: 50%;
+        margin: 0 auto;
     }
 }

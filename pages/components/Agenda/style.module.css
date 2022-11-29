@@ -18,6 +18,7 @@
 }
 
 .swipperComponent {
+    overflow: hidden;
     display: flex;
     justify-items: center;
     justify-content: center;

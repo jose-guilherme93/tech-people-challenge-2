@@ -8,6 +8,7 @@
 }
 
 .footerContent {
+    flex-wrap: wrap;
     display: flex;
     gap: 2.87rem;
     margin-left: 9rem;
