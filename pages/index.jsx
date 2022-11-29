@@ -52,8 +52,11 @@ export default function Home() {
             <h1>Somos um servidor <span>focado em transição de</span> carreira</h1>
             
             <p>Temos desafios, lives, eventos, tiramos dúvidas e até achamos uma colocação para você. Quer fazer parte? Clique no botão abaixo:</p>
-            <button onClick={hrefParticipateButton} className={styles.participateButton}>
-              Participar
+            <button 
+              onClick={hrefParticipateButton} 
+              className={styles.participateButton}
+            >
+            Participar
             </button>
           </section>
           
