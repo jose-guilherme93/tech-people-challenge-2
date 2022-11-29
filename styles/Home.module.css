@@ -3,6 +3,7 @@
 .main {
   
   top: 1.3rem;
+  overflow: hidden;
 }
 
 .description {
@@ -19,6 +20,7 @@
   justify-content: center;
   padding-right: 8rem;
   padding-bottom: 14rem;
+  overflow: hidden;
 }
 
 .mainDescription h1 {

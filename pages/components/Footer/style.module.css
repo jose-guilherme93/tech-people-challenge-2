@@ -10,6 +10,7 @@
 .footerContent {
     flex-wrap: wrap;
     display: flex;
+    flex: auto;
     gap: 2.87rem;
     margin-left: 9rem;
     align-items: center;
@@ -29,7 +30,7 @@
 .footerLogos img {
     width: auto;
     height: 1rem;
-margin-left: 1.75rem;
+    margin-left: 1.75rem;
 
 }
 
@@ -41,4 +42,14 @@ align-items: center;
 justify-content: flex-end;
 margin-right: 6.16rem;
 
+}
+
+@media (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footerContent {
+    margin: 0;
+    padding: 0 1rem;
+    }
 }

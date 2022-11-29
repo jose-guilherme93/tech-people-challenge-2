@@ -87,6 +87,7 @@ font-family: 'Roboto';
 @media (max-width: 700px) {
 
     .wrapper {
+        padding: 0;
         margin: 1rem;
     }
 
