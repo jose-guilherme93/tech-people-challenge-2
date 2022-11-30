@@ -8,7 +8,7 @@ export default function SwipperAgenda() {
                     <p className={styles.wrapperParagraphDate}>20<br/> Jan</p>
                     <h3>Live: Iniciando com nuxt por Mateus Ávila Isidoro</h3>
                 </div>
-                <p className={styles.wrapperParagraph}>Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur;</p>
+                <p className={styles.wrapperParagraph}>Maiores voluptas laboriosam non dolorum perferendis fuga repellat aut. Blanditiis quos in minus. Voluptatum quia quia voluptas voluptatem vero ex possimus. Iure et consectetur</p>
                 <div className={styles.participateContent}>
                     <button className={styles.participateButton}><a href=""></a>Participar</button>
                     <div className={styles.participateDate}>

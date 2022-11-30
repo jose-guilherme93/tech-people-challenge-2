@@ -21,41 +21,20 @@ export default function Agenda() {
         
             <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay]}
-            slidesPerView={2}
+            slidesPerView={1}
             
             autoplay={true}
             a11y={true}
             pagination={true}
-            breakpoints={{
-                600: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                  pagination: false,
-                  
-                },
-                1000: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-              }}
-              className={styles.swipper}
+           
+            className={styles.swipper}
             >
                 <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
                 <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
                 <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
                 <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
                 <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
-                <SwiperSlide  className={styles.swipperComponent}> <SwipperAgenda /> </SwiperSlide>
+                
             </Swiper>
 
         </div>

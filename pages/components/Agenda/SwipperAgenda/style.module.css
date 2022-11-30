@@ -1,7 +1,10 @@
 .wrapper  {
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 33.75rem;
     height: 19.25rem;
+    align-items: center;
     border-radius: .5rem;   
     background-color: white;
     -webkit-box-shadow: 0px 0px 67px -17px rgba(0,0,0,0.29);
@@ -10,6 +13,9 @@
 }
 
 .wrapperContent {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -19,16 +25,17 @@
 }
 
 .wrapperParagraph {
-    width: 30rem;
+    
     height: 5.62rem;
     flex-wrap: nowrap;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 1rem;
+    padding: 0 1rem;
     color: rgba(55, 71, 79, 0.721569);
     letter-spacing: .444444px;
     margin-left: 1rem;
-    line-height: 28px;
+    line-height: 1.75rem;
 }
 
 .wrapperContent .wrapperParagraphDate  {
@@ -68,7 +75,9 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 1rem;
-    
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
 
  }
 
@@ -88,16 +97,17 @@
     display: flex;
     height: 5rem;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     margin-right: 1.75rem;
     text-align: center;
+    
     
 }
 
 .participateDate p {
     margin-top: 0.1rem;
-    margin-left: 1rem;
+    
 }
 
 
@@ -105,7 +115,7 @@
 @media (max-width: 700px) {
     .wrapper {
         height: auto;
-        width: 21.87rem;
+        width: 80%;
         padding-left: 1rem;
     }
 

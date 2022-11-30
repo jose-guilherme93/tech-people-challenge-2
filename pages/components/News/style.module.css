@@ -25,7 +25,7 @@
   
   .containerWrapper p {
     color:#656465;
-    padding-bottom: 4.93rem;
+    padding: 1rem 0;
   
   }
   .gridContainer {
@@ -36,25 +36,6 @@
     margin-right: 6rem;
   }
 
-  
-
-  @media (max-width: 1100px) {
-    .gridContainer{
-      
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-     
-    }
-  }
-
-  @media (max-width: 750px) {
-    .gridContainer{
-      
-      grid-template-columns: 1fr;
-      justify-items: center;
-     
-    }
-  }
   
   .gridContainer div {
     transition: all ease;
@@ -102,3 +83,35 @@
   }
   
   
+  
+  
+
+  @media (max-width: 1100px) {
+    .gridContainer{
+      
+     
+     margin: 0 1rem;
+      justify-items: center;
+     
+    }
+  }
+
+  @media (max-width: 700px) {
+    .gridContainer{
+      
+      grid-template-columns: 1fr;
+      justify-items: center;
+     
+    }
+  .gridContainer div {
+    width: 90%;
+    height: fit-content;
+    display: inline-block;
+  }
+
+  .gridContainer div .imgBanner {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+}

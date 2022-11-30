@@ -1,5 +1,7 @@
 
-
+.wrapper {
+    width: 100%;
+}
 
 .wrapper h2 {
     font-family: 'Roboto';
@@ -9,6 +11,7 @@
     font-weight: 700;
     font-size: 37px;
     line-height: 54px;
+    
 }
 
 

@@ -12,7 +12,8 @@
 html {
   --bg: #F2F2F2;
   --globalTheme: #8471FF;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,3 +30,9 @@ a, li, ul {
   list-style: none;  
 }
 
+@media (max-width: 700px) {
+  html {
+    width: 100vw;
+    
+  }
+}
