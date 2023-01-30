@@ -54,4 +54,22 @@
 }
 
 
+@media (max-width: 900px) {
 
+    .rightMenu {
+      display: none;
+    }
+    .leftMenu {
+      padding: 0;
+    }
+}
+
+@media (min-width:900px) {
+  .HamburgerMenu {
+    display: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+}

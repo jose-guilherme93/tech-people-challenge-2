@@ -2,7 +2,7 @@
 import {useRef} from 'react'
 import Image from 'next/image'
 import styles from './style.module.css'
-
+import HamburgerMenu from '../HamburgerMenu'
 export default function Header({scrollChange, setNavRef} ) {
   const navRef = useRef(0)
   const valueNavRef = navRef.current?.value
@@ -41,7 +41,9 @@ export default function Header({scrollChange, setNavRef} ) {
             <li><a className={styles.links} href="#news">Notícias</a></li>
             <li><a className={styles.links} href="#agenda">Agenda</a></li>
           </ul>
-          
+          <div className={styles.HamburgerMenu}>
+            <HamburgerMenu />
+          </div>
         </nav>
     )
 }
