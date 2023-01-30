@@ -10,8 +10,8 @@
   height: 5.56rem;
   background-color: var(--bg);
   position: sticky;
-
 }
+
 .leftMenu {
   display: flex;
   padding-left: 9.15rem;
@@ -27,9 +27,10 @@
     display: flex;
     z-index: 20;
     top: 0px;
-    left: 0;
+    left: 0px;
     background-color: var(--globalTheme);
     position: sticky;
+    transition: all ease .3s;
   
   }
 
