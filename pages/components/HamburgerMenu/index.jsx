@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './style.module.css'
+import { useAtom } from 'jotai'
+import { buttonState } from '../../../globalState/atoms'
 import MenuOptionsMobile from '../HamburgerMenu/MenuOptionsMobile'
 const HamburgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useAtom(buttonState)
 
   return (
     <>
@@ -19,7 +21,7 @@ const HamburgerMenu = () => {
           )}
         </svg>
       </button>
-      <nav className={`${styles[isOpen ? 'open' : "menu"]}`}>
+      <nav className={`${styles.menu}${styles[isOpen ? "open" : "menu"]}`}>
       
        {isOpen && <MenuOptionsMobile />}
       </nav>
