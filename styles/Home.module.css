@@ -1,8 +1,6 @@
 
  
 .main {
-  
-  top: 1.3rem;
   overflow: hidden;
 }
 
@@ -116,14 +114,10 @@
   width: 100%;
   color: #373737;
   font-family: 'Roboto';
-  
   font-weight: 700;
   font-size: 37px;
   line-height: 54px;
-  padding-top: 5.56rem;
   text-align: center;
-  
-
 }
 
 

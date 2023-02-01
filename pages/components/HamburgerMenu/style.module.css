@@ -43,6 +43,7 @@
   }
 
   .a {
+    border-radius: .5rem;
     padding: 1rem;
     font-size: 2em;
     color: #333;
@@ -52,8 +53,9 @@
   }
 
   .a:hover {
+    border-radius: 1rem;
     background: #f9f9f9;
-    transform: all ease 1s;
+    transform: all ease .4s;
   }
 
 
